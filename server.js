@@ -23,6 +23,9 @@ app.use(cors({
 }));
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Hello, Express!');
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/tickets', ticketRoutes);
 app.use('/api/dashboard', dashboardRoutes); // Register dashboard route
