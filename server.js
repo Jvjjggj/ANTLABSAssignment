@@ -17,6 +17,10 @@ connectDB();
 // Middleware
 app.use(express.json());
 
+app.use(cors({
+    origin: 'http://localhost:3004',
+}));
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tickets', ticketRoutes);
