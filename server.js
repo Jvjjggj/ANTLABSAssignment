@@ -3,6 +3,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
+const cors = require('cors');
 const ticketRoutes = require('./routes/tickets');
 const dotenv = require('dotenv');
 const dashboardRoutes = require('./routes/dashboard'); // Add dashboard route
